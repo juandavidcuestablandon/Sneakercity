@@ -14,9 +14,10 @@ const [shoe, setShoe] = useState([])
 
   const filter = () => {
     const filteredSneakers = data.sneakers.filter(
-      (sneaker) => sneaker.nombre === result.cart.nombre
+      (sneaker) => sneaker.imagen === result.cart.imagen
     );
     setShoe(filteredSneakers);
+
   };
 
   if (!shoe.length) {
