@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+  padding-left:5rem ;
+  padding-right: 5rem;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+.img {
+  width: 19rem;
+  height: 8rem;
+  background-color: red;
+}
+
+a{
+text-decoration: none;
+color: black;
+}
+li {
+  list-style: none;
+}
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  
+}
+
+.btn {
+  background-color: black;
+  color: white;
+}
+
+.btn:hover {
+  border:  1px solid black;
+}
+
+
+
+
+
+
+
+/* fin de header  */
+
+.banner {
+  height: 650px;
+}
+
+
+
+
+
+.title {
+  margin: 5rem;
+  font-weight: bold;
+}
+
+
+.imgcard {
+  height: 20rem;
+}
+
+.card {
+  border: 1.3px solid black;
+  height:43rem;
+  width: 20rem;
+  transition: .5s;
+  align-items: center;
+  margin: 1rem;
+}
+
+.card:hover {
+ height: 43.5rem;
+ width: 20.5rem;
+}
+
+
+.card-body{
+ text-align: center;
+ padding-bottom: 0;
+  width: 15rem;
+}
+
+.btnbox{
+  text-align: center;
+  padding-bottom: 1rem;
+  
+
+}
+
+.btnbox button{
+  border: none;
+  transition: .5s;
+  height: 2rem;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+
+
+.btnbox button:hover{
+  background-color: black;
+  color: white;
+}
+
+.card-title {
+
+  font-weight: bold;
+}
+
+/* fin novedades  */
+
+
+.box {
+  width: 20rem;
+  text-align: center;
+  box-shadow: 1px 5px 10px #8C8C8C;
+
+}
+
+.box h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+
+.box .img {
+  width: 20rem;
+  height: 20rem;
+}
+
+.containerbox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 7.5rem;
+ 
+
+}
+
+
+footer {
+  width: 100%;
+  border-top: 2px solid black;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.fbox {
+  width: 25rem;
+  text-align: center;
+}
+
+footer p {
+  padding: 0;
+  font-size: 0.8rem;
+}
+
+.icons {
+  font-size: 1.3rem;
+  margin-right: 1rem;
+}
+
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+
+.heart {
+  color: #dc3545;
+  font-size: 1.3rem;
+}
+
+/* marcas   */
+
+.btnbrand {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.carousel-item {
+  transition: transform .2s ease-in-out;
+  
+}
+
+.imgnovedades{
+  width: 24rem;
+  height: 24rem;
+  box-shadow: 2px 5px 10px gray;
+}
+
+.info  {
+  width: 24rem;
+  height: auto;
+  margin: 1rem;
+
+ 
+}
+.text {
+  padding: 1rem;
+  height: auto;
+  box-shadow: 2px 5px 10px gray;
+}
+
+ .card-title {
+font-size: 2rem;
+
+}
+
+
+.rebajas .card {
+  height: 37rem;
+}
