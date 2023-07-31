@@ -67,6 +67,7 @@ li {
 
 .imgcard {
   height: 20rem;
+  width: 19.8rem;
 }
 
 .card {
@@ -176,8 +177,15 @@ footer p {
 
 .heart {
   color: #dc3545;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
+  transition: .3s;
 }
+
+.heart:hover {
+  font-size: 2rem;
+}
+
+
 
 /* marcas   */
 
@@ -194,7 +202,7 @@ footer p {
 .imgnovedades{
   width: 24rem;
   height: 24rem;
-  box-shadow: 2px 5px 10px var(--grey);
+  box-shadow: 0px 0px 8px var(--grey);
 }
 
 .info  {
@@ -323,6 +331,45 @@ font-size: 2rem;
   border-radius: .3rem;
 }
 
+.card a {
+  background-color: transparent;
+}
 
 
+.productshop label {
+  font-size: 2rem;
+}
 
+.imgproduct {
+  height: 45rem;
+ 
+}
+
+.titleproduct {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.description{
+  font-size: 2.5rem;
+}
+
+select {
+  padding: 1rem;
+  margin: 1rem 0 1rem 0;
+  background-color: var(--grey);
+  color: var(--colorsecundary);
+  border-radius: .5rem;
+}
+
+select option {
+  background-color: var(--colorprimary);
+  color: var(--colorsecundary);
+  font-size: 1rem;
+}
+
+.buy {
+  width: 20rem;
+  height: 3rem;
+  font-size: 1.5rem;
+}
