@@ -5,18 +5,21 @@ import Novedades from './components/Novedades'
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Zapatillas from './components/pages/Zapatillas'
 import Rebajas from './components/pages/Rebajas'
-
 import Marcas from './components/pages/Marcas'
 import '../src/App.css'
+import Login from './components/pages/user/Login'
+import CreateAccount from './components/pages/user/CreateAccount'
+import { SearchResultsProvider } from './Context/DataContext'
+import Search from './components/pages/search'
 
 function App() {
 
-  // llamada a la db
   
 return (
     
-   
-       <Router>
+   <SearchResultsProvider>
+
+     <Router>
       <Header />
 
       <Routes>
@@ -25,12 +28,17 @@ return (
         <Route path='/news' element={<Novedades/>}/>
         <Route path='/sales' element={<Rebajas/>}/>
         <Route path='/brands' element={<Marcas/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/createaccount' element={<CreateAccount/>}/>
+        <Route path='/search' element={<Search/>}/>
       </Routes>
 
       <Footer />
       
 
       </Router>
+   </SearchResultsProvider>
+      
     
    
 
