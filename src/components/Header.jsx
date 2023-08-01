@@ -5,24 +5,16 @@ import { FaRegUser } from 'react-icons/fa';
 import data from "./data.json"
 import {  useContext} from 'react';
 import { SearchResults } from '../Context/DataContext';
-
-
-
-
+import Cart from './Cart';
 
 const Header = () => {
-
-
   const results = useContext(SearchResults);
-
   const  sendData = (e) => {
    const value =  e.target.value
    const filteredSneakers = data.sneakers.filter(
       (sneaker) => sneaker.nombre.toLowerCase().includes(value.toLowerCase())
     );
     results.setResults(filteredSneakers);
-    
-     
   
   } 
 
@@ -51,9 +43,8 @@ return (
               <input type="text" placeholder="BUSCAR"  onChange={sendData}/>
               <Link  to="/search"><button className='ms-3 btn'>BUSCAR</button></Link>
              
-         
-            <BsCart4 className='icon' />
-            <Link  to='/login'><FaRegUser className='icon' /></Link>
+              <Cart />
+              <Link  to='/login'><FaRegUser className='icon' /></Link>
            </div>
 
 

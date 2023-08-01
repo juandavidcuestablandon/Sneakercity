@@ -14,7 +14,7 @@ const [shoe, setShoe] = useState([])
 
   const filter = () => {
     const filteredSneakers = data.sneakers.filter(
-      (sneaker) => sneaker.imagen === result.cart.imagen
+      (sneaker) => sneaker.imagen === result.cart.imagen  
     );
     setShoe(filteredSneakers);
 
@@ -23,6 +23,15 @@ const [shoe, setShoe] = useState([])
   if (!shoe.length) {
     return <div>Loading...</div>;
   }
+
+  const datacart = () => {
+    result.setCarBuy(shoe[0])
+  
+    }
+
+
+  
+
 
   return (
     <div>
@@ -63,7 +72,7 @@ const [shoe, setShoe] = useState([])
 
         <h4 className="mt-5 mb-5">{`Precio ${shoe[0].precio}`}</h4>
 
-        <button className="btn buy">Comprar</button>
+        <button className="btn buy" onClick={datacart}>Comprar</button>
           
 
         </div>

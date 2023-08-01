@@ -3,7 +3,11 @@ import { useContext } from 'react';
 import { SearchResults } from '../Context/DataContext';
 import { Link } from'react-router-dom';
 
+
+
+
 const Card = ({ imagen , precio, description, nombre }) => {
+
 
 const favorites = () => {
 
@@ -21,6 +25,17 @@ console.log(e.target);
 
 }
 
+const datacart = () => {
+  results.setCarBuy({imagen})
+
+  }
+
+
+
+
+
+
+
 
     return (
       
@@ -34,7 +49,7 @@ console.log(e.target);
             <p>$ {precio}</p>
           </div>
           <div className="btnbox">
-              <button>COMPRAR</button>
+              <button onClick={datacart}>COMPRAR</button>
             <a  onClick={favorites}><HiHeart className='heart'/></a>  
             </div>
         </div> 

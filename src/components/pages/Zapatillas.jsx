@@ -12,6 +12,7 @@ return (
            description ={item.descripcion}
            nombre={item.nombre}
            className='product'
+           
          />
       ))
     }
