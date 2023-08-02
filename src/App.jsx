@@ -12,6 +12,7 @@ import CreateAccount from './components/pages/user/CreateAccount'
 import { SearchResultsProvider } from './Context/DataContext'
 import Search from './components/pages/search'
 import Product from './components/pages/Product'
+import Favorites from './components/pages/user/Favorites'
 
 function App() {
 
@@ -33,6 +34,7 @@ return (
         <Route path='/createaccount' element={<CreateAccount/>}/>
         <Route path='/search' element={<Search/>}/>
         <Route path='/product' element={<Product/>}/>
+        <Route path='/favorite' element={<Favorites/>}/>
 
       </Routes>
 

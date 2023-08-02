@@ -1,11 +1,12 @@
 import logo from './image/logo.png';
 import { Link } from 'react-router-dom'
-import { BsCart4 } from 'react-icons/bs';
+import { MdFavorite } from 'react-icons/md';
 import { FaRegUser } from 'react-icons/fa';
 import data from "./data.json"
 import {  useContext} from 'react';
 import { SearchResults } from '../Context/DataContext';
 import Cart from './Cart';
+
 
 const Header = () => {
   const results = useContext(SearchResults);
@@ -45,6 +46,7 @@ return (
              
               <Cart />
               <Link  to='/login'><FaRegUser className='icon' /></Link>
+               <Link to='/favorite'>< MdFavorite   className='icon' /></Link> 
            </div>
 
 

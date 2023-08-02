@@ -1,5 +1,6 @@
 import { HiHeart } from 'react-icons/hi';
-import { useContext } from 'react';
+import {BiHappyHeartEyes} from 'react-icons/bi'
+import { useContext , useState } from 'react';
 import { SearchResults } from '../Context/DataContext';
 import { Link } from'react-router-dom';
 
@@ -7,21 +8,19 @@ import { Link } from'react-router-dom';
 
 
 const Card = ({ imagen , precio, description, nombre }) => {
+  
+ 
+  const results = useContext(SearchResults);
+  const [favoriteIcon , setFavoritesIcon] = useState(<HiHeart className='heart' />);
 
-
-const favorites = () => {
-
-  // aun pendiente 
-alert("Esta seguro que desea agregar a favoritos");
+  const favorites = () => {
+   setFavoritesIcon(<BiHappyHeartEyes  className='happy'/>)
+   results.setFavorite((prevShoe) => [ ...prevShoe,...[{nombre, imagen, precio, description}]]);
+  
 }
-
-
-const results = useContext(SearchResults);
-
-
-const info = (e) => {
+const info = () => {
 results.setCart({nombre, imagen, precio, description})
-console.log(e.target);
+
 
 }
 
@@ -50,7 +49,7 @@ const datacart = () => {
           </div>
           <div className="btnbox">
               <button onClick={datacart}>COMPRAR</button>
-            <a  onClick={favorites}><HiHeart className='heart'/></a>  
+            <a onClick={favorites}>{favoriteIcon}</a> 
             </div>
         </div> 
           
