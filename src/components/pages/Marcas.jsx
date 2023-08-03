@@ -21,7 +21,7 @@ const Marcas = () => {
     <div>
       <h1>Nuestras Marcas</h1>
 
-      <div>
+      <div className="brand">
       <button className="btnbrand " onClick={brands}>Nike </button>
       <button className="btnbrand" onClick={brands}>Puma </button>
       <button className="btnbrand" onClick={brands}>Adidas </button>
@@ -47,7 +47,7 @@ const Marcas = () => {
 
       <h2 className="m-5">Productos</h2>
 
-        <div className="d-flex  flex-wrap justify-content-center">
+        <div className="d-flex  flex-wrap justify-content-center align-items-center">
 
        
       {marca.map((sneaker) => (

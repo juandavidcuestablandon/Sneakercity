@@ -36,7 +36,7 @@ const [shoe, setShoe] = useState([])
   return (
     <div>
         <h1 className="m-5">{shoe[0].marca}</h1>
-     <div className="d-flex text">
+     <div className="d-flex text product">
         <div >
              <img src={result.cart.imagen} className="imgproduct" alt={result.cart.nombre} />  
         </div>

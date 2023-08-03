@@ -6,7 +6,7 @@ const Novedades = () => {
       <>
       <h3 className="m-5">Actualidad</h3>
 
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center novedades">
 
     
        <NovedadesInfo 

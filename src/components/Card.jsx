@@ -9,6 +9,8 @@ import { Link } from'react-router-dom';
 
 const Card = ({ imagen , precio, description, nombre }) => {
   
+  const [cart , setcart] = useState('COMPRAR');
+
  
   const results = useContext(SearchResults);
   const [favoriteIcon , setFavoritesIcon] = useState(<HiHeart className='heart' />);
@@ -26,15 +28,9 @@ results.setCart({nombre, imagen, precio, description})
 
 const datacart = () => {
   results.setCarBuy({imagen})
+   setcart('Agregado al carrito');
 
   }
-
-
-
-
-
-
-
 
     return (
       
@@ -48,7 +44,7 @@ const datacart = () => {
             <p>$ {precio}</p>
           </div>
           <div className="btnbox">
-              <button onClick={datacart}>COMPRAR</button>
+              <button onClick={datacart}>{cart}</button>
             <a onClick={favorites}>{favoriteIcon}</a> 
             </div>
         </div> 

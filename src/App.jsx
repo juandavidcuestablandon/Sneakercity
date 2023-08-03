@@ -7,12 +7,11 @@ import Zapatillas from './components/pages/Zapatillas'
 import Rebajas from './components/pages/Rebajas'
 import Marcas from './components/pages/Marcas'
 import '../src/App.css'
-import Login from './components/pages/user/Login'
-import CreateAccount from './components/pages/user/CreateAccount'
 import { SearchResultsProvider } from './Context/DataContext'
 import Search from './components/pages/search'
 import Product from './components/pages/Product'
 import Favorites from './components/pages/user/Favorites'
+import Notfound from './components/pages/404'
 
 function App() {
 
@@ -30,11 +29,10 @@ return (
         <Route path='/news' element={<Novedades/>}/>
         <Route path='/sales' element={<Rebajas/>}/>
         <Route path='/brands' element={<Marcas/>}/>
-        <Route path='/login' element={<Login/>}/>
-        <Route path='/createaccount' element={<CreateAccount/>}/>
         <Route path='/search' element={<Search/>}/>
         <Route path='/product' element={<Product/>}/>
         <Route path='/favorite' element={<Favorites/>}/>
+        <Route path='*' element={<Notfound/>}/>
 
       </Routes>
 

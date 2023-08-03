@@ -15,7 +15,7 @@ const Favorites = () => {
     <div>
       <h1>Tus Favoritos</h1>
 
-      <main className="container">
+      <main className="container fav">
         {favorites.map((favorite) => (
           <div key={favorite.id} className="main">
             <div>

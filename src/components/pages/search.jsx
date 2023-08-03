@@ -13,7 +13,7 @@ const Search = () => {
     <div>
       <h1 className="m-5">Zapatillas Encontradas</h1>
 
-      <div className="d-flex flex-wrap">
+      <div className="d-flex flex-wrap busqueda">
             {results.results.map((sneaker) => (
               
 
